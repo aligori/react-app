@@ -5,11 +5,11 @@ import details from '../../assets/images/application-details.png';
 
 const DocumentsSection = () => {
   return (
-    <div className="bg-white shadow flex items-center pb-10">
+    <div className="bg-white shadow flex flex-col lg:flex-row items-center pb-10">
       <div className="flex-1">
         <img src={details} alt="" className="shadow" />
       </div>
-      <div className="flex-1 px-20">
+      <div className="flex-1 px-10 lg:px-20">
         <Badge text="Client Application" />
         <h3 className="font-bold text-2xl mt-1">Application Documents in one place</h3>
         <p className="text-sm text-gray-500 mt-2 mb-8">

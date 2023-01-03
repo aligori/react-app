@@ -13,16 +13,18 @@ const NavItem = ({ title, onClick }) => {
 
 const Navbar = () => {
   return (
-    <div className="bg-white flex items-center justify-between border-b shadow-md py-5 px-20">
+    <div className="bg-white flex items-center justify-between border-b shadow-md py-5 px-5 lg:px-20">
       <div className="flex flex-1 items-center">
         <div className="font-semibold text-xl mr-5">
           <span className="text-blue">ONE</span>
           <span className="text-dark-blue">LINE</span>
         </div>
-        <div className="flex items-center">
-          <NavItem title="Solutions" />
-          <NavItem title="Pricing" />
-          <NavItem title="Contact Us" />
+        <div className="hidden md:block">
+          <div className="flex items-center">
+            <NavItem title="Solutions" />
+            <NavItem title="Pricing" />
+            <NavItem title="Contact Us" />
+          </div>
         </div>
       </div>
       <div className="flex items-center">

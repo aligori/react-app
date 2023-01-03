@@ -1,16 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import RadioButton from '../../core/radio/RadioButton';
 import ImageService from '../../utils/services/ImageService';
-
-const options = [
-  { id: 0, text: 'Categorize' },
-  { id: 1, text: 'Show in Funnel' },
-  { id: 2, text: 'Drive Campaign' },
-  { id: 3, text: 'Send Online Form' },
-  { id: 4, text: 'Send Application' },
-  { id: 5, text: 'Go see live' },
-  { id: 6, text: 'Make the deal' }
-];
+import { dealSectionOptions as options } from '../../constants/index';
 
 const DealsSection = () => {
   const [selectedOption, setSelectedOption] = useState(0);
@@ -18,7 +9,7 @@ const DealsSection = () => {
 
   const fetchImages = useCallback(() => {
     ImageService.getRandomList().then((response) => {
-      const images = response.data?.splice(0, 7).map((image, index) => {
+      const images = response.data?.map((image, index) => {
         return { ...options[index], url: image.download_url };
       });
       setImages(images);

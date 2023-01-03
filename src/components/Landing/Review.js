@@ -4,7 +4,7 @@ const Review = ({ reviewer, text, key }) => {
   return (
     <div
       key={key}
-      className="flex-1 flex-col px-40 py-20 border-l border-gray-900 border-opacity-20 text-sm">
+      className="flex-1 flex-col px-10 lg:px-40 py-20 border-b lg:border-b-0 lg:border-l border-gray-900 border-opacity-20 text-sm">
       <div>{text}</div>
       <div className="flex items-center mt-4">
         <img src={reviewer.image} alt="" className="rounded-full h-14 w-14 mr-3" />
