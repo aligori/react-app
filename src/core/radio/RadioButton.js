@@ -3,7 +3,7 @@ import React from 'react';
 const RadioButton = ({ label, checked, onClick }) => {
   return (
     <div
-      className="flex items-center text-gray-700 font-medium text-xs leading-5 mx-3 cursor-pointer group"
+      className="flex items-center text-gray-700 font-medium text-xs leading-5 m-3 cursor-pointer group"
       onClick={onClick}>
       <div
         className={`border-white border-3 ring-8 ${

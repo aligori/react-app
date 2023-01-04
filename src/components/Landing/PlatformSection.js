@@ -28,7 +28,7 @@ const PlatformSection = () => {
         Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing
         sagittis vel nulla nec.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:mx-40">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-5 lg:mx-40">
         <Functionality
           title="Import CSV"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
