@@ -5,8 +5,8 @@ import landingImage from '../assets/images/landing-image.jpg';
 import avatar from '../assets/images/avatar.png';
 import DealsSection from '../components/Landing/DealsSection';
 import DocumentsSection from '../components/Landing/DocumentsSection';
-import Review from '../components/Landing/Review';
-import reviews from '../data/reviews';
+import Testimonial from '../components/Landing/Testimonial';
+import testimonials from '../data/testimonials';
 import PlatformSection from '../components/Landing/PlatformSection';
 import { Bath, Bed, Sofa } from 'tabler-icons-react';
 
@@ -54,9 +54,9 @@ const LandingPage = () => {
       <DealsSection />
       <DocumentsSection />
       <div className="bg-[#3057A3] text-white flex flex-col lg:flex-row items-center">
-        {reviews.map(({ text, reviewer, logo }, index) => (
+        {testimonials.map(({ text, person, logo }, index) => (
           <div key={index}>
-            <Review logo={logo} text={text} reviewer={reviewer} />
+            <Testimonial logo={logo} text={text} person={person} />
           </div>
         ))}
       </div>

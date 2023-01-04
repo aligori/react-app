@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Review = ({ reviewer, text, logo }) => {
-  const { image, name, position } = reviewer;
+const Testimonial = ({ person, text, logo }) => {
+  const { image, name, position } = person;
 
   return (
     <div className="flex-1 flex-col px-10 lg:px-40 py-20 border-b lg:border-b-0 lg:border-l border-gray-900 border-opacity-20 text-sm">
@@ -18,4 +18,4 @@ const Review = ({ reviewer, text, logo }) => {
   );
 };
 
-export default Review;
+export default Testimonial;
