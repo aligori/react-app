@@ -22,8 +22,10 @@ const LandingPage = () => {
       <DealsSection />
       <DocumentsSection />
       <div className="bg-[#3057A3] text-white flex flex-col lg:flex-row items-center">
-        {reviews.map(({ text, reviewer, index }) => (
-          <Review key={index} text={text} reviewer={reviewer} />
+        {reviews.map(({ text, reviewer }, index) => (
+          <div key={index}>
+            <Review text={text} reviewer={reviewer} />
+          </div>
         ))}
       </div>
       <PlatformSection />
