@@ -5,7 +5,8 @@ import PrimaryButton from '../../core/buttons/PrimaryButton';
 const FreeTrialForm = () => {
   const [email, setEmail] = useState('');
 
-  const readTermsOfService = () => console.log('Opening terms of service...');
+  const readTerms = () => console.log('Opening terms of service...');
+  const startFreeTrial = () => console.log(`Sending email to: ${email}`);
 
   return (
     <div className="p-10 lg:p-20">
@@ -27,12 +28,12 @@ const FreeTrialForm = () => {
           onChange={setEmail}
           className="flex-1"
         />
-        <PrimaryButton label="Start Free Trial" onClick={() => {}} className="mx-2" />
+        <PrimaryButton label="Start Free Trial" onClick={startFreeTrial} className="mx-2" />
       </div>
       <p className="text-xs text-blue-700">
         Start your free trial, no credit card necessary. By providing your email, you agree to our
-        <span className="underline ml-1" onClick={readTermsOfService}>
-          terms of service
+        <span className="underline ml-1" onClick={readTerms}>
+          terms or service
         </span>
         .
       </p>

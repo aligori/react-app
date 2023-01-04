@@ -10,7 +10,7 @@ import {
   Tag
 } from 'tabler-icons-react';
 
-const Functionality = ({ title, text, icon }) => {
+const Feature = ({ title, text, icon }) => {
   return (
     <div className="mx-2 my-3">
       {icon}
@@ -29,7 +29,7 @@ const PlatformSection = () => {
         sagittis vel nulla nec.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-5 lg:mx-40">
-        <Functionality
+        <Feature
           title="Import CSV"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
@@ -39,7 +39,7 @@ const PlatformSection = () => {
             </div>
           }
         />
-        <Functionality
+        <Feature
           title="Drive Campaigns"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
@@ -49,7 +49,7 @@ const PlatformSection = () => {
             </div>
           }
         />
-        <Functionality
+        <Feature
           title="Add Tasks"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
@@ -60,7 +60,7 @@ const PlatformSection = () => {
             </div>
           }
         />
-        <Functionality
+        <Feature
           title="Add Tags"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
@@ -71,7 +71,7 @@ const PlatformSection = () => {
           }
         />
 
-        <Functionality
+        <Feature
           title="See Statistics"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
@@ -81,7 +81,7 @@ const PlatformSection = () => {
             </div>
           }
         />
-        <Functionality
+        <Feature
           title="Email & Sms"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
@@ -91,7 +91,7 @@ const PlatformSection = () => {
             </div>
           }
         />
-        <Functionality
+        <Feature
           title="Receive Applications"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
@@ -101,7 +101,7 @@ const PlatformSection = () => {
             </div>
           }
         />
-        <Functionality
+        <Feature
           title="Send Online Forms"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
