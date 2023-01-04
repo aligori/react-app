@@ -5,8 +5,10 @@ import details from '../../assets/images/application-details.png';
 
 const ListItem = ({ title, text, icon, bgColor }) => {
   return (
-    <div className="flex items-start my-6">
-      <div className={`${bgColor} text-white p-3 rounded-md mr-5`}>{icon}</div>
+    <div className="flex items-start my-6 group">
+      <div className={`${bgColor} text-white p-3 rounded-md mr-5 group-hover:translate-y-0.5`}>
+        {icon}
+      </div>
       <div className="flex-1 flex-col">
         <h3 className="font-medium text-base">{title}</h3>
         <p className="text-sm text-gray-500 my-1">{text}</p>

@@ -12,8 +12,8 @@ import {
 
 const Feature = ({ title, text, icon }) => {
   return (
-    <div className="mx-2 my-3">
-      {icon}
+    <div className="group mx-2 my-3">
+      <div className="group-hover:translate-y-0.5">{icon}</div>
       <h3 className="font-medium text-base">{title}</h3>
       <p className="text-sm text-gray-500 my-1">{text}</p>
     </div>
