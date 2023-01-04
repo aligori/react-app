@@ -1,24 +1,18 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import RadioButton from '../../core/radio/RadioButton';
-import ImageService from '../../utils/services/ImageService';
 import { dealSectionOptions as options } from '../../constants/index';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchImages, imagesSelector } from '../../redux/slices/imagesSlice';
 
 const DealsSection = () => {
   const [selectedOption, setSelectedOption] = useState(0);
-  const [images, setImages] = useState([]);
+  const images = useSelector(imagesSelector);
 
-  const fetchImages = useCallback(() => {
-    ImageService.getRandomList().then((response) => {
-      const images = response.data?.map((image, index) => {
-        return { ...options[index], url: image.download_url };
-      });
-      setImages(images);
-    });
-  }, []);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    fetchImages();
-  }, [fetchImages]);
+    dispatch(fetchImages());
+  }, [dispatch]);
 
   return (
     <div className="bg-white shadow flex flex-col items-center py-10">
