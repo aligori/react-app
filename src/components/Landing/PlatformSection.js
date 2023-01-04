@@ -10,10 +10,10 @@ import {
   Tag
 } from 'tabler-icons-react';
 
-const Functionality = ({ title, text, icon, color }) => {
+const Functionality = ({ title, text, icon }) => {
   return (
     <div className="mx-2 my-3">
-      <div className={`w-12 bg-${color}-50 text-${color}-500 p-3 rounded-md mr-5 mb-2`}>{icon}</div>
+      {icon}
       <h3 className="font-medium text-base">{title}</h3>
       <p className="text-sm text-gray-500 my-1">{text}</p>
     </div>
@@ -33,58 +33,83 @@ const PlatformSection = () => {
           title="Import CSV"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
-          icon={<FileUpload />}
-          color="orange"
+          icon={
+            <div className="w-12 bg-orange-50 text-orange-500 p-3 rounded-md mr-5 mb-2">
+              <FileUpload />
+            </div>
+          }
         />
         <Functionality
           title="Drive Campaigns"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
-          icon={<Speakerphone />}
-          color="green"
+          icon={
+            <div className="w-12 bg-green-50 text-green-500 p-3 rounded-md mr-5 mb-2">
+              <Speakerphone />
+            </div>
+          }
         />
         <Functionality
           title="Add Tasks"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
-          icon={<FilePlus />}
           color="cyan"
+          icon={
+            <div className="w-12 bg-cyan-50 text-cyan-500 p-3 rounded-md mr-5 mb-2">
+              <FilePlus />
+            </div>
+          }
         />
         <Functionality
           title="Add Tags"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
-          icon={<Tag />}
-          color="indigo"
+          icon={
+            <div className="w-12 bg-indigo-50 text-indigo-500 p-3 rounded-md mr-5 mb-2">
+              <Tag />
+            </div>
+          }
         />
 
         <Functionality
           title="See Statistics"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
-          icon={<FileAnalytics />}
-          color="red"
+          icon={
+            <div className="w-12 bg-red-50 text-red-500 p-3 rounded-md mr-5 mb-2">
+              <FileAnalytics />
+            </div>
+          }
         />
         <Functionality
           title="Email & Sms"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
-          icon={<Message />}
-          color="yellow"
+          icon={
+            <div className="w-12 bg-yellow-50 text-yellow-500 p-3 rounded-md mr-5 mb-2">
+              <Message />
+            </div>
+          }
         />
         <Functionality
           title="Receive Applications"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
-          icon={<FileArrowRight />}
-          color="teal"
+          icon={
+            <div className="w-12 bg-teal-50 text-teal-500 p-3 rounded-md mr-5 mb-2">
+              <FileArrowRight />
+            </div>
+          }
         />
         <Functionality
           title="Send Online Forms"
           text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
             lobortis."
-          icon={<Send />}
-          color="blue"
+          icon={
+            <div className="w-12 bg-blue-50 text-blue-500 p-3 rounded-md mr-5 mb-2">
+              <Send />
+            </div>
+          }
         />
       </div>
     </div>
